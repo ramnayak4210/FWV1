@@ -1,0 +1,26 @@
+AssertNull should be used or AssertNotNull
+
+This is a pretty dumb question but my first time with unit testing so: 
+lets say I have an object variable like obj and I want my unit test to Fail if this obj is Null. 
+so for assertions, should I say AssertNull or AssertNotNull ? 
+I get confused how they are named.
+
+The assertNotNull() method means "a passed parameter must not be null": if it is null then the test case fails.
+The assertNull() method means "a passed parameter must be null": if it is not null then the test case fails.
+
+String str1 = null;
+String str2 = "hello";              
+
+// Success.
+assertNotNull(str2);
+
+// Fail.
+assertNotNull(str1);
+
+// Success.
+assertNull(str1);
+
+// Fail.
+assertNull(str2);
+
+assertNotNull asserts that the object is not null. If it is null the test fails, so you want that.
