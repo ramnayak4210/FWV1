@@ -27,11 +27,6 @@ class ArmstrongNum
 				arm = arm+mul;
 				temp2 = temp2/10;
 			 }
-			 if(arm == num)
-			 {
-			  System.out.println("Number is armstrong");
-			 } else{
-			  System.out.println("Number is not armstrong");
-			 }
+			 System.out.println("old code deleted");
 		 }
 }
