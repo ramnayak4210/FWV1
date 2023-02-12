@@ -1,5 +1,7 @@
 class ArmstrongNum
 {
+
+// Test demo for practicce
          public static void main(String[] args)
 		 {
 			 int num = 153;
